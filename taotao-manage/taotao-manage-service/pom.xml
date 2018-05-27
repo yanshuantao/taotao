@@ -10,8 +10,8 @@
   
   <dependencies>
 		<dependency>
-			<groupId>com.taotao</groupId>
-			<artifactId>taotao-manager-dao</artifactId>
+			<groupId>com.yst</groupId>
+			<artifactId>taotao-manage-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<!-- spring的依赖 -->
@@ -46,4 +46,19 @@
 		</dependency>
 	</dependencies>
   
+  <build>
+  	<plugins>
+  		<plugin>
+  			<artifactId>maven-war-plugin</artifactId>
+			<version>2.2</version>
+			<configuration>  
+	            <webResources>  
+	                <resource>  
+	                    <directory>WebRoot</directory>  
+	                </resource>  
+	            </webResources>  
+        	</configuration>   		
+       	</plugin>
+  	</plugins>
+  </build>
 </project>
